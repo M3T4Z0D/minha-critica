@@ -1,0 +1,17 @@
+Páginas iniciais
+
+- Login/Cadastro
+- Feed de críticas(com filtro e busca)
+- Página da crítica (visualização)
+- CRUD de críticas
+- Cadastro de mídia (série, filme, livro...)
+
+---------------
+
+Features
+
+- Avaliação da crítica
+- Comentário nas críticas
+- Busca avançada (vários filtros)
+- Compartilhar crítica nas redes sociais
+- Comparar críticas da mesma obra
