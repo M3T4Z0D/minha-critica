@@ -1,7 +1,7 @@
 Páginas iniciais
 
 - Login/Cadastro ✔️
-- Uma aba para cada tipo (série, filme e livro)
+- Uma aba para cada tipo (série, filme e livro) ✔️
 - Feed de críticas(com filtro e busca)
 - Página da crítica (visualização)
 - CRUD de críticas ✔️
@@ -11,6 +11,7 @@ Páginas iniciais
 
 Features
 
+- Fast-view de mídia ✔️
 - Avaliação da crítica
 - Comentário nas críticas
 - Busca avançada (vários filtros)
