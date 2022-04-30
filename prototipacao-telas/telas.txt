@@ -1,8 +1,13 @@
 Páginas iniciais
 
 - Login/Cadastro ✔️
+<<<<<<< HEAD
 - Uma aba para cada tipo (série, filme e livro) ✔️
 - Feed de críticas(com filtro e busca)
+=======
+- Uma aba para cada tipo (série, filme e livro)
+- Feed de críticas(com filtro e busca) ✔️
+>>>>>>> 12ec643388eca393d3511bc152974d2582871759
 - Página da crítica (visualização)
 - CRUD de críticas ✔️
 - Cadastro de mídia (série, filme, livro...) ✔️
