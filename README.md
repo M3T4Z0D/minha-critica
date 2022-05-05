@@ -9,6 +9,7 @@ Participantes:
     - Igor Vera
     - Lucas Cabral
     - Thiago Bauce
+    - Thais Garcez
 ---------------------------------
 
 Este projeto foi escolhido nas opções disponíveis em <https://github.com/hsborges/progweb-app-ideas>.
