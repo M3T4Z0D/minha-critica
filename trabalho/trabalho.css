@@ -1,6 +1,6 @@
 html,
 body {
-    width: 100%;
+    width: 98%;
     height: 100%;
     margin: 0;
     background-color: #110f10;
@@ -30,19 +30,21 @@ body {
     margin-top: 50px;
     margin-left: 50px;
     height: 30%;
-    font-size: 16px;
+    font-size: 16px;    
  }
  .header-menu-home{
     background-color: gray;
     padding: 5px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     height: auto;
     width: auto;
  }
  .header-menu-filmes{
     background-color: gray;
     padding: 5px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     height: auto;
     width: auto;
     margin-left: 2px;
@@ -51,7 +53,8 @@ body {
 .header-menu-series {
     background-color: gray;
     padding: 5px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     height: auto;
     width: auto;
     margin-left: 2px;
@@ -59,7 +62,8 @@ body {
 .header-menu-livros {
     background-color: gray;
     padding: 5px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     height: auto;
     width: auto;
     margin-left: 2px;
@@ -73,6 +77,7 @@ body {
 }
 
 .header-acc-signin{
+    
     background-color: gray;
     padding: 5px;
     border-radius: 5px;
@@ -89,21 +94,32 @@ body {
     margin-right: 5px;
 }
 
-.corpo-quad{
-    height: 250px;
-    width: 200px;
-    border: 1px solid #f7e159;
+.corpo{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.corpo-quad{
+    height: 50%;
+    width: 15%;
+    border: 1px solid #f7e159;
+    display: block;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 14%;
+    align-items: center;
 }
 
 .img{
     height: 120px;
-    width: 100px;
+    width: 80%;
     background-color: red;
+    margin: auto;
+    align-self: center;
 }
 .txt{
+    width: 80%;
+    margin: auto;
+    text-align: right;
     font-size: 10px;
     color: #f7e159;
 }
