@@ -5,7 +5,10 @@
     --black-1: hsl(0, 0%, 50%);
     --black-2: hsl(345, 6%, 13%);
     --black-3: hsl(330, 6%, 6%);
+    --yellow-1: hsl(61, 100%, 26%);
+    --yellow-2: hsl(61, 89%, 48%);
     font-family: 'Roboto', sans-serif;
+    background-color: var(--black-1);
 }
 
 nav{
@@ -14,25 +17,44 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--black-2);
-    height: 3rem;
+    height: 4rem;
     align-items: center;
-    padding: 1rem;
 }
 
 .logo__text{
     font-size: 1.75rem;
-    color: hsl(61, 89%, 48%);
+    color: var(--yellow-2);
     font-weight: 600;
-    border: 1px solid hsl(61, 100%, 26%);
+    border: 1px solid var(--yellow-1);
     padding: 3px;
+}
+
+.nav__menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nav__menu a {
+    padding: 1rem;
 }
 
 .actions{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
 }
 
-.actions:hover{
+.actions a{
+    padding: 1rem;
+}
+
+nav a:hover{
     background-color: var(--black-1);
+    color: var(--yellow-2);
 }
 
 a:link, a:visited{
