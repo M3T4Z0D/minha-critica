@@ -1,0 +1,127 @@
+/* Em desenvolvimento por Lucas Cabral */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --grey-1: hsl(0, 0%, 90%);
+  --black-1: hsl(0, 0%, 50%);
+  --black-2: hsl(345, 6%, 13%);
+  --black-3: hsl(330, 6%, 6%);
+  --yellow-1: hsl(61, 100%, 26%);
+  --yellow-2: hsl(61, 89%, 48%);
+  --input-border: #8b8a8b;
+  --input-focus-h: 245;
+  --input-focus-s: 100%;
+  --input-focus-l: 42%;
+  --input-hover-background: hsl(0, 5%, 85%);
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+section#form {
+  margin: 20vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__form {
+  padding: 4rem 4rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  background: #e0e0e0;
+  box-shadow: 18px 18px 35px #c1c1c1, -18px -18px 35px #ffffff;
+}
+
+.form__title {
+  font-size: 2rem;
+}
+
+#form > hr {
+  display: block;
+  width: 20rem;
+  height: 2px;
+  background-color: var(--black-2);
+}
+
+.form__field {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__field > label {
+  font-family: "Roboto", "sans serif";
+  font-size: 1.25rem;
+  margin-right: 2rem;
+}
+
+input {
+  font-size: 16px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #e0e0e0;
+  border: none;
+  border-bottom: 1px solid var(--input-border);
+  transition: 180ms box-shadow ease-in-out, 180ms background-color ease-in;
+}
+
+input:hover {
+  background-color: var(--input-hover-background);
+}
+
+input:not(textarea) {
+  line-height: 1;
+  height: 2.25rem;
+}
+
+input:focus {
+  /* ...existing styles */
+  box-shadow: 0 0 0 1px
+    hsla(
+      var(--input-focus-h),
+      var(--input-focus-s),
+      calc(var(--input-focus-l) + 40%),
+      0.8
+    );
+  background-color: var(--input-hover-background);
+  outline: 3px solid transparent;
+}
+
+.login__form > .btn {
+  margin-top: 2rem;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #231f20;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.login__form > .btn:hover {
+  background: #808080;
+  background-image: -webkit-linear-gradient(top, #808080, #808080);
+  background-image: -moz-linear-gradient(top, #808080, #808080);
+  background-image: -ms-linear-gradient(top, #808080, #808080);
+  background-image: -o-linear-gradient(top, #808080, #808080);
+  background-image: linear-gradient(to bottom, #808080, #808080);
+  text-decoration: none;
+  cursor: pointer;
+}
