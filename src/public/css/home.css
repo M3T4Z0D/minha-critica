@@ -1,0 +1,62 @@
+html,
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    background-color: #110f10;
+}
+
+.corpo{
+    display: flex;
+}
+
+.movies{
+    width: 100%;
+    height: 33.333%;
+    align-items: center;
+}
+.series{
+    width: 100%;
+    height: 33.333%;
+    align-items: center;
+}
+.books{
+    width: 100%;
+    height: 33.333%;
+    align-items: center;
+}
+.movies-quad{
+    height: 250px;
+    width: 200px;
+    border: 1px solid #f7e159;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.series-quad {
+    height: 250px;
+    width: 200px;
+    border: 1px solid #f7e159;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.books-quad {
+    height: 250px;
+    width: 200px;
+    border: 1px solid #f7e159;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+.txt{
+    font-size: 12px;
+    color: #f7e159;
+}

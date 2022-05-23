@@ -1,0 +1,202 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #110f10;
+}
+.corpo{
+    height: 100%;
+    display: flex;
+    color:#f7e159;
+    padding-top: 2%;
+}
+
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+.txt{
+    font-size: 12px;
+    color: #f7e159;
+}
+
+.ordem_filtro{
+    letter-spacing: -1.5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+    padding-left: 1%;
+    width: 25%;
+}
+
+select, input[type="number"],input[type="date"],input[type="select"]{
+    letter-spacing: -1.5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80%;
+    width: 35%;
+}
+
+.filtro{
+    padding-left: 10%;
+}
+
+.centralizar{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.barra-superior{
+    position: relative;
+    height: 5%;
+    width: 100%;
+}
+
+.barra-pesquisa{
+    float: left;
+    display:flex;
+    background-color: grey;
+    border-radius: 25px;
+    width: 40%;
+    height: 90%;
+    border-color: #f7e159;
+    border: 1px solid;
+}
+
+.icone-pesquisa{
+    font-size: 120%;
+    margin-left: 4%;
+    margin-right: 4%;
+    line-height: normal;
+}
+
+input[type="text"]{
+    background-color: transparent;
+    border-color: transparent;
+    width: 85%;
+    padding-left: 5%;
+}
+
+#pesquisa_filme::placeholder{
+    color: black;
+}
+
+.add-filme{
+    float: right;
+}
+
+input[type="button"]{
+    width: auto;
+    height: 25px;
+    background-color: grey;
+    border: 1px solid;
+    border-color: #f7e159;
+    border-radius: 3px;
+}
+.centro{
+    display: block;
+    width: 50%;
+}
+
+.filmes{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: block;
+}
+.linha{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.quadro{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid;
+    border-color:#f7e159;
+}
+
+.imagem{
+    margin: auto;
+    background-color: beige;
+    width: 50%;
+    height: 40%;
+}
+
+.selecao{
+    width: 20%;
+    height: 60%;
+    background-color: grey;
+    margin: auto;
+    margin-top: 0%;
+}
+
+.topo-selecao{
+    background-color: #f7e159;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    margin: auto;
+    width: 100%;
+    height: 7%;
+    color: black;
+    font-size: 70%;
+    border: 1px solid;
+    border-color:darkslategrey;
+}
+
+
+.info-selecao{
+    width: 100%;
+    height: 85%;
+    border: 1px solid;
+    border-color:darkslategrey;
+}
+
+.dados{
+    height: 45%;
+}
+
+.add-critica{
+    float: right;
+    margin-right: 3%;
+    width: 50%;
+    height: 10%;
+    border: 1px solid #f7e159;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size: 80%;
+    color: black;
+    padding-right: 3%;
+}
+
+.add{
+    margin: auto;
+    color: black;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width: 15%;
+    height: 60%;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 2px;
+}
+
+.social-selecao{
+    display : flex;
+    align-items : center;
+    justify-content:right;
+    margin: auto;
+    width: 100%;
+    height: 8%;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid;
+    border-color:darkslategrey;
+}

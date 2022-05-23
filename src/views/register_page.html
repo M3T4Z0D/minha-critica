@@ -10,9 +10,7 @@
     <title>Minha Crítica - Login</title>
     <link rel="stylesheet" href="../public/css/reset.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
-    <link rel="stylesheet" href="../public/css/login.css">
-
-    <script src="../public/js/login.js" defer></script>
+    <link rel="stylesheet" href="../public/css/register.css">
 </head>
 
 <body>
@@ -20,29 +18,6 @@
         <div class="nav__logo">
             <span class="logo__text">MINHA CRÍTICA</span>
         </div>
-<<<<<<< HEAD
-        
-        <div class="nav__menu">
-            <a href="#" class="menu__link">
-                Home
-            </a>
-            <a href="#" class="menu__link">
-                Séries
-            </a>
-            <a href="#" class="menu__link">
-                Filmes
-            </a>
-            <a href="#" class="menu__link">
-                Livros
-            </a>
-            <a href="#" class="menu__link">
-                Busca Avançada
-            </a>
-        </div>
-
-        <div class="actions">
-            <a href="#">Registrar</a>
-=======
 
         <div class="nav__menu">
             <a href="../../index.html" class="menu__item">Home</a>
@@ -53,21 +28,25 @@
         </div>
 
         <div class="nav_actions">
-            <a href="register_page.html">Registrar</a>
->>>>>>> a035197fc24a02f28ceb977af34d2c30888cdc22
+            <a href="login.html">Entrar</a>
         </div>
     </nav>
 
     <section id="form">
-        <h1 class="form__title">Login</h1>
+        <h1 class="form__title">Cadastro</h1>
         
         <hr>
 
-        <form action="#" class="login__form" name="login__form">
+        <form action="#" class="login__form">
+            
+            <div class="form__field">
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name">
+            </div>
 
             <div class="form__field">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
+                <input type="text" name="email" id="email">
             </div>
 
             <div class="form__field">
@@ -75,7 +54,7 @@
                 <input type="password" name="password" id="password">
             </div>
 
-            <button class="btn" type="submit">Entrar</button>
+            <button class="btn" type="submit">Cadastrar</button>
         </form>
     </section>
 </body>

@@ -1,62 +1,6 @@
 /* Em desenvolvimento por Lucas Cabral */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-<<<<<<< HEAD
-:root{
-    --black-1: hsl(0, 0%, 50%);
-    --black-2: hsl(345, 6%, 13%);
-    --black-3: hsl(330, 6%, 6%);
-    --yellow-1: hsl(61, 100%, 26%);
-    --yellow-2: hsl(61, 89%, 48%);
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--black-1);
-}
-
-nav{
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--black-2);
-    height: 4rem;
-    align-items: center;
-}
-
-.logo__text{
-    font-size: 1.75rem;
-    color: var(--yellow-2);
-    font-weight: 600;
-    border: 1px solid var(--yellow-1);
-    padding: 3px;
-}
-
-.nav__menu{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.nav__menu a {
-    padding: 1rem;
-}
-
-.actions{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-}
-
-.actions a{
-    padding: 1rem;
-}
-
-nav a:hover{
-    background-color: var(--black-1);
-    color: var(--yellow-2);
-=======
 *,
 *::before,
 *::after {
@@ -98,7 +42,6 @@ section#form {
   border-radius: 40px;
   background: #e0e0e0;
   box-shadow: 18px 18px 35px #c1c1c1, -18px -18px 35px #ffffff;
->>>>>>> a035197fc24a02f28ceb977af34d2c30888cdc22
 }
 
 .form__title {

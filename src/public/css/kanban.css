@@ -1,0 +1,93 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #110f10;
+}
+
+.table-kanban-filmes {
+  background-color: yellow;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 190px;
+  opacity: 100%;
+  display: inline-block;
+}
+
+.table-kanban-series {
+  background-color: yellow;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 10px;
+  opacity: 100%;
+  display: inline-block;
+}
+
+.table-kanban-livros {
+  background-color: yellow;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  margin-top: 80px;
+  margin-left: 10px;
+  opacity: 100%;
+  display: inline-block;
+}
+
+.table-critica-destaque {
+  width: 280px;
+  height: 110px;
+  background-color: gray;
+  opacity: 100%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.titulo-critica-destaque {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  display: inline;
+  position: absolute;
+  margin-left: 8px;
+}
+
+.texto-descritivo {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  display: inline;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 8px;
+}
+
+.texto-destaque {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  color: #f7e159;
+  display: absolute;
+  text-align: center;
+}
+
+.corpo {
+  display: flex;
+}
+
+.img {
+  height: 90%;
+  width: 30%;
+  border-radius: 2px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.txt {
+  font-size: 12px;
+  color: #f7e159;
+}
