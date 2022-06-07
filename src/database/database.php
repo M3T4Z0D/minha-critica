@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace database;
 
 use PDO;
 /* Classe responsável por fazer a gestão da conexão com o banco.*/
@@ -30,9 +30,36 @@ class Database
         ');
         $con->exec('
             CREATE TABLE IF NOT EXISTS Filmes (
-                nome  TEXT,
-                email TEXT PRIMARY KEY,
-                senha TEXT 
+                FilmesId INTEGER PRIMARY KEY AUTOINCREMENT,
+                titulo TEXT,
+                ano NUMERIC(4),
+                genero TEXT,
+                elenco TEXT,
+                duracao TEXT,
+                caminhoimg TEXT,
+                avaliacao REAL 
+            )
+        ');
+        $con->exec('
+            CREATE TABLE IF NOT EXISTS Series (
+                SeriesId INTEGER PRIMARY KEY AUTOINCREMENT,
+                titulo TEXT,
+                ano NUMERIC(4),
+                genero TEXT,
+                elenco TEXT,
+                caminhoimg TEXT,
+                avaliacao REAL 
+            )
+        ');
+        $con->exec('
+            CREATE TABLE IF NOT EXISTS Livros (
+                LivrosId INTEGER PRIMARY KEY AUTOINCREMENT,
+                titulo TEXT,
+                ano NUMERIC(4),
+                genero TEXT,
+                autor TEXT,
+                caminhoimg TEXT,
+                avaliacao REAL 
             )
         ');
     }
