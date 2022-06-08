@@ -36,6 +36,7 @@ class Database
                 genero TEXT,
                 elenco TEXT,
                 duracao TEXT,
+                sinopse TEXT,
                 caminhoimg TEXT,
                 avaliacao REAL 
             )
@@ -47,6 +48,7 @@ class Database
                 ano NUMERIC(4),
                 genero TEXT,
                 elenco TEXT,
+                sinopse TEXT,
                 caminhoimg TEXT,
                 avaliacao REAL 
             )
@@ -58,6 +60,7 @@ class Database
                 ano NUMERIC(4),
                 genero TEXT,
                 autor TEXT,
+                sinopse TEXT,
                 caminhoimg TEXT,
                 avaliacao REAL 
             )
