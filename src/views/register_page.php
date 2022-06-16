@@ -1,5 +1,3 @@
-<!-- Em desenvolvimento por Lucas Cabral -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,11 +32,11 @@
 
     <section id="form">
         <h1 class="form__title">Cadastro</h1>
-        
+
         <hr>
 
         <form action="#" class="login__form">
-            
+
             <div class="form__field">
                 <label for="name">Nome completo</label>
                 <input type="text" name="name" id="name">

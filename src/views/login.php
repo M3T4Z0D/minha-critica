@@ -1,5 +1,3 @@
-<!-- Em desenvolvimento por Lucas Cabral -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +34,7 @@
 
     <section id="form">
         <h1 class="form__title">Login</h1>
-        
+
         <hr>
 
         <form action="#" class="login__form" name="login__form">

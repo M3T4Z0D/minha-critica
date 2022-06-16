@@ -89,13 +89,13 @@ class Route
                         $route_match_found = true;
                         break;
                     }
-                }
-            }
+                } //fim foreach
+            } //fim if preg_match
 
             if ($route_match_found && !$multimatch) {
                 break;
             }
-        }
+        } //fim foreach
 
         if (!$route_match_found) {
             if ($path_match_found) {
@@ -108,5 +108,5 @@ class Route
                 }
             }
         }
-    }
+    } //end function run
 }
