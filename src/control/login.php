@@ -2,8 +2,9 @@
 
 namespace App\Controladores;
 
-use App\Modelos\Usuario;
+
 use PDOException;
+use src\models\Usuario;
 
 class LoginController extends Controller
 {

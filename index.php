@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="src/public/css/navbar.css">
     <link href="src/public/css/home.css" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div class="nav__logo">
@@ -27,8 +29,8 @@
             <a href="src/views/register_page.html">Registrar</a>
         </div>
     </nav>
-    <div class = "corpo">
-        <div class ="movies">
+    <div class="corpo">
+        <div class="movies">
             <div class="movies-quad">
                 <div class="img">
                     <img src="src/public/img/hp3poster.jpg" />
@@ -150,4 +152,55 @@
         </div>
     </div>
 </body>
+
 </html>
+
+<?php
+// disable warnings
+error_reporting(E_ALL ^ E_WARNING);
+
+// Define global basepath
+define('BASEPATH', '/');
+
+include_once __DIR__ . '/app/Database.php';
+include_once __DIR__ . '/app/controladores/Controlador.php';
+include_once __DIR__ . '/app/controladores/Login.php';
+include_once __DIR__ . '/app/modelos/Usuario.php';
+include_once __DIR__ . '/libs/Route.php';
+
+use App\Controladores\LoginController;
+use database\Database;
+use Steampixel\Route;
+
+Database::createSchema();
+
+$controller = new LoginController();
+
+// Request direction to controller method
+Route::add('/login', fn () => $controller->loginIndex(), ['get']);
+Route::add('/register', fn () => $controller->cadastrarIndex(), ['get']);
+Route::add('/user/info', fn () => $controller->info(), ['get']);
+//Route::add('/user/list', fn () => $controller->listar(), ['get']);
+Route::add('/filmes/search', fn () => $controller->listar(), ['get']);
+Route::add('/series/search', fn () => $controller->listar(), ['get']);
+Route::add('/livros/search', fn () => $controller->listar(), ['get']);
+Route::add('/filmes/register', fn () => $controller->listar(), ['get']);
+Route::add('/series/register', fn () => $controller->listar(), ['get']);
+Route::add('/livros/register', fn () => $controller->listar(), ['get']);
+
+Route::add('/login', fn ()  => $controller->login(), ['post']);
+Route::add('/register', fn ()  => $controller->cadastrar(), ['post']);
+Route::add('/logout', fn () => $controller->sair(), ['post']);
+
+// Aux Route to redirect user
+Route::add('/', function () {
+    header('Location: ' . BASEPATH . 'login');
+}, ['get']);
+
+Route::add('/.*', function () {
+    http_response_code(404);
+    echo "Page not found!";
+}, ['get']);
+
+// Start o router
+Route::run(BASEPATH);
