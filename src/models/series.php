@@ -2,7 +2,7 @@
 
 namespace src\models;
 
-use src\database;
+use database\Database;
 
 class Serie
 {
@@ -75,7 +75,6 @@ class Serie
             $serie = new Serie($resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['sinopse']);
             array_push($resultados, $serie);
         }
-
         return $resultados;
     }
 }

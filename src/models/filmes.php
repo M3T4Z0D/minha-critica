@@ -2,7 +2,8 @@
 
 namespace src\models;
 
-use src\database;
+use database\Database;
+
 
 class Filme
 {
@@ -77,7 +78,6 @@ class Filme
             $filme = new Filme($resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['duracao'], $resultado['sinopse']);
             array_push($resultados, $filme);
         }
-
         return $resultados;
     }
 }
