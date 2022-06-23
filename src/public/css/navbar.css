@@ -19,7 +19,7 @@ nav{
     justify-content: space-between;
     background-color: var(--black-2);
     height: 4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 nav a{
