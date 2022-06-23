@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav>
-        <object width="100%"  height="100%" data="nav__menu.php"></object>
+        <object width="100%"  height="100%" data="../../nav__menu.php"></object>
     </nav>
     <div class ="corpo">
         <form id="selecao">

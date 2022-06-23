@@ -23,8 +23,8 @@
         </div>
 
         <div class="nav_actions">
-            <a href="src/views/login.html">Entrar</a>
-            <a href="src/views/register_page.html">Registrar</a>
+            <a href="src/views/login.php" target="_parent">Entrar</a>
+            <a href="src/views/register_page.php" target="_parent">Registrar</a>
         </div>
     </nav>
 </body>

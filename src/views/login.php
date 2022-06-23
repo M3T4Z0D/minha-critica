@@ -17,7 +17,7 @@
 
 <body>
     <nav>
-        <object width="100%"  height="100%" data="nav__menu.php"></object>
+    <object width="100%"  height="100%" data="../../nav__menu.php"></object>
     </nav>
 
     <section id="form">
@@ -25,7 +25,7 @@
         
         <hr>
 
-        <form action="#" class="login__form" name="login__form">
+        <form class="login__form" name="login__form" method="POST">
 
             <div class="form__field">
                 <label for="email">E-mail</label>
