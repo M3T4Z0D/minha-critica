@@ -1,6 +1,6 @@
 <?php
 
-namespace src;
+namespace database;
 
 use PDO;
 /* Classe responsável por fazer a gestão da conexão com o banco.*/
