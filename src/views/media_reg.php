@@ -11,22 +11,7 @@
 </head>
 <body>
     <nav>
-        <div class="nav__logo">
-            <span class="logo__text">MINHA CRÍTICA</span>
-        </div>
-
-        <div class="nav__menu">
-            <a href="../../index.html" class="menu__item">Home</a>
-            <a href="#" class="menu__item">Filmes</a>
-            <a href="#" class="menu__item">Séries</a>
-            <a href="#" class="menu__item">Livros</a>
-            <a href="#" class="menu__item">Busca Avançada</a>
-        </div>
-
-        <div class="nav_actions">
-            <a href="./login.html">Entrar</a>
-            <a href="./register_page.html">Registrar</a>
-        </div>
+        <object width="100%"  height="100%" data="../../nav__menu.php"></object>
     </nav>
     <div class ="corpo">
         <form id="selecao">
