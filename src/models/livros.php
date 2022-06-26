@@ -48,7 +48,7 @@ class Livro
         $stm->execute();
     }
 
-    static public function buscarFilme($titulo): ?Serie
+    static public function buscarLivro($titulo): ?Livro
     {
         $con = Database::getConnection();
         $stm = $con->prepare('SELECT caminhoimg,titulo, ano, genero, autor, sinopse FROM Livros WHERE titulo = :titulo');
