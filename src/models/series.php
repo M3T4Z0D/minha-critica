@@ -12,14 +12,16 @@ class Serie
     private $ano;       //ano de lançamento string
     private $elenco;    //elenco
     private $sinopse;   //sinopse
+    private $caminhoimg; //imagem
 
-    function __construct(string $titulo, string $genero, string $ano, string $sinopse, string $elenco)
+    function __construct(string $caminmhoimg, string $titulo, string $genero, string $ano, string $sinopse, string $elenco)
     {
         $this->titulo = $titulo;
         $this->genero = $genero;
         $this->ano = $ano;
         $this->sinopse = $sinopse;
         $this->elenco = $elenco;
+        $this->caminhoimg = $caminhoimg;
     }
 
     public function __get($campo)
@@ -36,26 +38,27 @@ class Serie
     {
         $con = Database::getConnection();
 
-        $stm = $con->prepare('INSERT INTO Series (titulo, ano, genero, elenco, sinopse) VALUES (:titulo, :ano, :genero, :elenco, :sinopse)');
+        $stm = $con->prepare('INSERT INTO Series (caminhoimg,titulo, ano, genero, elenco, sinopse) VALUES (:caminhoimg, :titulo, :ano, :genero, :elenco, :sinopse)');
         $stm->bindValue(':titulo', $this->titulo);
         $stm->bindValue(':ano', $this->ano);
         $stm->bindValue(':genero', $this->genero);
         $stm->bindValue(':elenco', $this->elenco);
         $stm->bindValue(':sinopse', $this->sinopse);
+        $stm->bindValue(':caminhoimg', $this->caminhoimg);
         $stm->execute();
     }
 
     static public function buscarFilme($titulo): ?Serie
     {
         $con = Database::getConnection();
-        $stm = $con->prepare('SELECT titulo, ano, genero, elenco, sinopse FROM Series WHERE titulo = :titulo');
+        $stm = $con->prepare('SELECT caminhoimg,titulo, ano, genero, elenco, sinopse FROM Series WHERE titulo = :titulo');
         $stm->bindParam(':titulo', $titulo);
 
         $stm->execute();
         $resultado = $stm->fetch();
 
         if ($resultado) {
-            $serie = new Serie($resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['sinopse']);
+            $serie = new Serie($resultado['caminhoimg'], $resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['sinopse']);
             return $serie;
         } else {
             return NULL;
@@ -66,13 +69,13 @@ class Serie
     static public function buscarTodos(): array
     {
         $con = Database::getConnection();
-        $stm = $con->prepare('SELECT titulo, ano, genero, elenco, sinopse FROM Series');
+        $stm = $con->prepare('SELECT caminhoimg, titulo, ano, genero, elenco, sinopse FROM Series');
         $stm->execute();
 
         $resultados = [];
 
         while ($resultado = $stm->fetch()) {
-            $serie = new Serie($resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['sinopse']);
+            $serie = new Serie($resultado['caminhoimg'], $resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['sinopse']);
             array_push($resultados, $serie);
         }
 

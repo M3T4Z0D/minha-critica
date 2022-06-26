@@ -12,8 +12,9 @@ class Filme
     private $elenco;    //elenco
     private $duracao;   //duracao string
     private $sinopse;   //sinopse
+    private $caminhoimg; //imagem
 
-    function __construct(string $titulo, string $genero, string $ano, string $sinopse, string $duracao, string $elenco)
+    function __construct(string $caminhoimg, string $titulo, string $genero, string $ano, string $sinopse, string $duracao, string $elenco)
     {
         $this->titulo = $titulo;
         $this->genero = $genero;
@@ -21,6 +22,7 @@ class Filme
         $this->sinopse = $sinopse;
         $this->duracao = $duracao;
         $this->elenco = $elenco;
+        $this->$caminhoimg = $caminhoimg;
     }
 
     public function __get($campo)
@@ -37,13 +39,14 @@ class Filme
     {
         $con = Database::getConnection();
 
-        $stm = $con->prepare('INSERT INTO Filmes (titulo, ano, genero, elenco, duracao, sinopse) VALUES (:titulo, :ano, :genero, :elenco, :duracao, :sinopse)');
+        $stm = $con->prepare('INSERT INTO Filmes (caminhoimg, titulo, ano, genero, elenco, duracao, sinopse) VALUES (:caminhoimg, :titulo, :ano, :genero, :elenco, :duracao, :sinopse)');
         $stm->bindValue(':titulo', $this->titulo);
         $stm->bindValue(':ano', $this->ano);
         $stm->bindValue(':genero', $this->genero);
         $stm->bindValue(':elenco', $this->elenco);
         $stm->bindValue(':duracao', $this->duracao);
         $stm->bindValue(':sinopse', $this->sinopse);
+        $stm->bindValue(':caminhoimg', $this->$caminhoimg);
         $stm->execute();
     }
 
@@ -57,7 +60,7 @@ class Filme
         $resultado = $stm->fetch();
 
         if ($resultado) {
-            $filme = new Filme($resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['duracao'], $resultado['sinopse']);
+            $filme = new Filme($resultado['caminhoimg'], $resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['duracao'], $resultado['sinopse']);
             return $filme;
         } else {
             return NULL;
@@ -68,13 +71,13 @@ class Filme
     static public function buscarTodos(): array
     {
         $con = Database::getConnection();
-        $stm = $con->prepare('SELECT titulo, ano, genero, elenco, duracao, sinopse FROM Filmes');
+        $stm = $con->prepare('SELECT caminhoimg, titulo, ano, genero, elenco, duracao, sinopse FROM Filmes');
         $stm->execute();
 
         $resultados = [];
 
         while ($resultado = $stm->fetch()) {
-            $filme = new Filme($resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['duracao'], $resultado['sinopse']);
+            $filme = new Filme($resultado['caminhoimg'], $resultado['titulo'], $resultado['ano'], $resultado['genero'], $resultado['elenco'], $resultado['duracao'], $resultado['sinopse']);
             array_push($resultados, $filme);
         }
 
