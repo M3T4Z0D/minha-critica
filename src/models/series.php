@@ -48,7 +48,7 @@ class Serie
         $stm->execute();
     }
 
-    static public function buscarFilme($titulo): ?Serie
+    static public function buscarSerie($titulo): ?Serie
     {
         $con = Database::getConnection();
         $stm = $con->prepare('SELECT caminhoimg,titulo, ano, genero, elenco, sinopse FROM Series WHERE titulo = :titulo');
