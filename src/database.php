@@ -37,7 +37,8 @@ class Database
                 duracao TEXT,
                 sinopse TEXT,
                 caminhoimg TEXT,
-                avaliacao REAL 
+                avaliacao REAL,
+                criticaId FOREIGN KEY
             )
         ');
         $con->exec('
@@ -49,7 +50,8 @@ class Database
                 elenco TEXT,
                 sinopse TEXT,
                 caminhoimg TEXT,
-                avaliacao REAL 
+                avaliacao REAL,
+                criticaId FOREIGN KEY 
             )
         ');
         $con->exec('
@@ -61,8 +63,17 @@ class Database
                 autor TEXT,
                 sinopse TEXT,
                 caminhoimg TEXT,
-                avaliacao REAL 
+                avaliacao REAL,
+                criticaId FOREIGN KEY
             )
+        ');
+        $con->exec('
+            CREATE TABLE IF NOT EXISTS Critica (
+                CriticaId INTEGER PRIMARY KEY AUTOINCREMENT,
+                comentario TEXT,
+                nota INTEGER,
+                userId FOREIGN KEY,
+                media
         ');
     }
 }
