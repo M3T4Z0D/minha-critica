@@ -14,6 +14,7 @@ body {
   margin-left: 190px;
   opacity: 100%;
   display: inline-block;
+  overflow: auto;
 }
 
 .table-kanban-series {
@@ -25,6 +26,7 @@ body {
   margin-left: 10px;
   opacity: 100%;
   display: inline-block;
+  overflow: auto;
 }
 
 .table-kanban-livros {
@@ -36,6 +38,7 @@ body {
   margin-left: 10px;
   opacity: 100%;
   display: inline-block;
+  overflow: auto;
 }
 
 .table-critica-destaque {
@@ -43,9 +46,9 @@ body {
   height: 110px;
   background-color: gray;
   opacity: 100%;
-  position: absolute;
+  position: relative;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: -37px;
 }
 
 .titulo-critica-destaque {
