@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="movies-quad">
-                <a href="src\views\movies_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $filmes->caminhoimg ?> />
                     </div>
