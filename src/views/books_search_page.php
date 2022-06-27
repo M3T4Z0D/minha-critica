@@ -130,7 +130,15 @@
             </div>
             <div class="info-selecao">
                 <div class="imagem"><?= $livro->caminhoimg ?></div>
-                <div class="dados"></div>
+                <div class="dados">
+                    <div class="info">
+                        Título: <?= $filme->titulo ?><br>
+                        Sinopse: <?= $filme->sinopse ?><br>
+                        Data de estreia: <?= $filme->ano ?><br>
+                        Gênero: <?= $filme->genero ?><br>
+                        Elenco: <?= $filme->elenco ?><br>
+                    </div>
+                </div>
                 <div class="add-critica">
                     <div class="add centralizar">
                         <ion-icon name="add-outline"></ion-icon>
