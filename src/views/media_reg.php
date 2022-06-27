@@ -26,24 +26,24 @@
         </form>
     </div>
 
-    <form class="media" action="#" method="post">
+    <form class="media" action="http://localhost:8081/progweb/cadastro_de_midia/filme" method="post" id="mediaForm">
         <div class="image">
-            <img src="../public/img/no-media.png">
+            <img src="../public/img/no-media.png" id="preview">
             <input class="fileInput" type="file" id="imgPoster" name="Poster" accept="image/*">
         </div>
         <div class="inputs">
             <span id="spanInfo1">Título</span>
-            <input class="informationInput" type="text" id="inputInfo1" name="Titulo"><br><br>
+            <input class="informationInput" type="text" id="inputInfo1" name="name"><br><br>
             <span id="spanInfo2">Sinopse</span>
             <textarea class="informationInput" name="sinopse" id="inputInfo2" rows="10"></textarea><br><br>
             <span id="spanInfo3">Ano de lançamento</span>
-            <input class="informationInput" type="text" id="inputInfo3" name="Ano"><br><br>
+            <input class="informationInput" type="text" id="inputInfo3" name="releaseDate"><br><br>
             <span id="spanInfo4">Gênero</span>
-            <input class="informationInput" type="text" id="inputInfo4" name="Gênero"><br><br>
+            <input class="informationInput" type="text" id="inputInfo4" name="genre"><br><br>
             <span id="spanInfo5">Elenco</span>
-            <input class="informationInput" type="text" id="inputInfo5" name="Elenco"><br><br>
+            <input class="informationInput" type="text" id="inputInfo5" name="cast"><br><br>
             <span id="spanInfo6">Duração</span>
-            <input class="informationInput" type="text" id="inputInfo6" name="Duraçao"><br><br>
+            <input class="informationInput" type="text" id="inputInfo6" name="movieLength"><br><br>
             <input class="sendButtons" type="submit" value="Adicionar">
             <input class="sendButtons" type="button" value="Cancelar" onclick="cancel()">
         </div>
