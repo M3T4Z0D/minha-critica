@@ -25,12 +25,11 @@
                     <div class="duracao">Duração: <?= $filmes->duracao ?></div>
                     <div class="gênero">Gênero: <?= $filmes->genero ?></div>
                     <div class="elenco">Elenco: <?= $filmes->elenco ?></div>
-                    <div class="avaliacao">Avaliação: <?= $filmes->avaliacao ?></div>
                 </div>
             </div>
             <div class="movies-quad">
                 <div class="img">
-                    <img src="src/public/img/interestelar.jpg" />
+                    <img src=<? $filmes->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $filmes->titulo ?></div>
@@ -38,12 +37,11 @@
                     <div class="duracao">Duração: <?= $filmes->duracao ?></div>
                     <div class="gênero">Gênero: <?= $filmes->genero ?></div>
                     <div class="elenco">Elenco: <?= $filmes->elenco ?></div>
-                    <div class="avaliacao">Avaliação: <?= $filmes->avaliacao ?></div>
                 </div>
             </div>
             <div class="movies-quad">
                 <div class="img">
-                    <img src="src/public/img/avengersinfwar.jpg" />
+                    <img src=<? $filmes->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $filmes->titulo ?></div>
@@ -51,14 +49,13 @@
                     <div class="duracao">Duração: <?= $filmes->duracao ?></div>
                     <div class="gênero">Gênero: <?= $filmes->genero ?></div>
                     <div class="elenco">Elenco: <?= $filmes->elenco ?></div>
-                    <div class="avaliacao">Avaliação: <?= $filmes->avaliacao ?></div>
                 </div>
             </div>
         </div>
         <div class="series">
             <div class="series-quad">
                 <div class="img">
-                    <img src="src/public/img/got.jpg" />
+                    <img src=<? $serie->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $serie->titulo ?></div>
@@ -70,7 +67,7 @@
             </div>
             <div class="series-quad">
                 <div class="img">
-                    <img src="src/public/img/brkbad.jpg" />
+                    <img src=<? $serie->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $serie->titulo ?></div>
@@ -82,7 +79,7 @@
             </div>
             <div class="series-quad">
                 <div class="img">
-                    <img src="src/public/img/spn.jpg" />
+                    <img src=<? $serie->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $serie->titulo ?></div>
@@ -96,7 +93,7 @@
         <div class="books">
             <div class="books-quad">
                 <div class="img">
-                    <img src="src/public/img/irobo.jpg" />
+                    <img src=<? $livro->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $livro->titulo ?></div>
@@ -109,7 +106,7 @@
             </div>
             <div class="books-quad">
                 <div class="img">
-                    <img src="src/public/img/codavinci.jpg" />
+                    <img src=<? $livro->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $livro->titulo ?></div>
@@ -122,7 +119,7 @@
             </div>
             <div class="books-quad">
                 <div class="img">
-                    <img src="src/public/img/cortico.jpg" />
+                    <img src=<? $livro->caminhoimg ?> />
                 </div>
                 <div class="txt">
                     <div class="titulo">Título: <?= $livro->titulo ?></div>

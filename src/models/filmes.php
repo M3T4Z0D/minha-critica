@@ -46,7 +46,7 @@ class Filme
         $stm->bindValue(':elenco', $this->elenco);
         $stm->bindValue(':duracao', $this->duracao);
         $stm->bindValue(':sinopse', $this->sinopse);
-        $stm->bindValue(':caminhoimg', $this->$caminhoimg);
+        $stm->bindValue(':caminhoimg', $this->caminhoimg);
         $stm->execute();
     }
 

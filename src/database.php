@@ -37,7 +37,6 @@ class Database
                 duracao TEXT,
                 sinopse TEXT,
                 caminhoimg TEXT,
-                avaliacao REAL,
                 criticaId FOREIGN KEY
             )
         ');
@@ -50,7 +49,6 @@ class Database
                 elenco TEXT,
                 sinopse TEXT,
                 caminhoimg TEXT,
-                avaliacao REAL,
                 criticaId FOREIGN KEY 
             )
         ');
@@ -63,7 +61,6 @@ class Database
                 autor TEXT,
                 sinopse TEXT,
                 caminhoimg TEXT,
-                avaliacao REAL,
                 criticaId FOREIGN KEY
             )
         ');
@@ -71,9 +68,7 @@ class Database
             CREATE TABLE IF NOT EXISTS Critica (
                 CriticaId INTEGER PRIMARY KEY AUTOINCREMENT,
                 comentario TEXT,
-                nota INTEGER,
                 userId FOREIGN KEY,
-                media
         ');
     }
 }
