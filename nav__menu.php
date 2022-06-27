@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="src/public/css/navbar.css">
     <link href="src/public/css/home.css" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <div class="nav__logo">
@@ -17,8 +19,8 @@
         <div class="nav__menu">
             <a href="index.php" target="_parent" class="menu__item">Home</a>
             <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">Filmes</a>
-            <a href="#" target="_parent" class="menu__item">Séries</a>
-            <a href="#" target="_parent" class="menu__item">Livros</a>
+            <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">Séries</a>
+            <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">Livros</a>
             <a href="src\views\movie_review_filter.php" target="_parent" class="menu__item">Busca Avançada</a>
         </div>
 
@@ -28,4 +30,5 @@
         </div>
     </nav>
 </body>
+
 </html>
