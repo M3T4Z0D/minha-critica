@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="movies-quad">
-                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\movies_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $filmes->caminhoimg ?> />
                     </div>
@@ -60,7 +60,7 @@
         </div>
         <div class="series">
             <div class="series-quad">
-                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\series_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $serie->caminhoimg ?> />
                     </div>
@@ -74,7 +74,7 @@
                 </a>
             </div>
             <div class="series-quad">
-                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\series_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $serie->caminhoimg ?> />
                     </div>
@@ -88,7 +88,7 @@
                 </a>
             </div>
             <div class="series-quad">
-                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\series_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $serie->caminhoimg ?> />
                     </div>
@@ -104,7 +104,7 @@
         </div>
         <div class="books">
             <div class="books-quad">
-                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\books_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $livro->caminhoimg ?> />
                     </div>
@@ -119,7 +119,7 @@
                 </a>
             </div>
             <div class="books-quad">
-                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\books_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $livro->caminhoimg ?> />
                     </div>
@@ -134,7 +134,7 @@
                 </a>
             </div>
             <div class="books-quad">
-                <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">
+                <a href="src\views\books_search_page.php" target="_parent" class="menu__item">
                     <div class="img">
                         <img src=<? $livro->caminhoimg ?> />
                     </div>
