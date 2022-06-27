@@ -21,7 +21,6 @@
                     <label for="ordenar">Ordenar por:</label>
                     <select id="ordem" name="ordem"><br>
                         <option value="genero">Gênero</option>
-                        <option value="nota_maior">Maiores notas</option>
                         <option value="mais_recentes">Mais recentes</option>
                         <option value="mais_visualizacoes">Mais visualizações</option>
                         <option value="mais_comentados">Mais comentados</option>
@@ -58,61 +57,67 @@
             <div class="filmes">
                 <div class="linha">
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $filme->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Avaliação: <br>
+                            Título: <?= $filme->titulo ?><br>
+                            Sinopse: <?= $filme->sinopse ?><br>
+                            Data de estreia: <?= $filme->ano ?><br>
+                            Gênero: <?= $filme->genero ?><br>
+                            Elenco: <?= $filme->elenco ?><br>
                         </div>
                     </div>
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $filme->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Avaliação: <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="linha">
-                    <div class="quadro">
-                        <div class="imagem">img</div>
-                        <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Avaliação: <br>
-                        </div>
-                    </div>
-                    <div class="quadro">
-                        <div class="imagem">img</div>
-                        <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Avaliação: <br>
+                            Título: <?= $filme->titulo ?><br>
+                            Sinopse: <?= $filme->sinopse ?><br>
+                            Data de estreia: <?= $filme->ano ?><br>
+                            Gênero: <?= $filme->genero ?><br>
+                            Elenco: <?= $filme->elenco ?><br>
                         </div>
                     </div>
                 </div>
                 <div class="linha">
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $filme->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Avaliação: <br>
+                            Título: <?= $filme->titulo ?><br>
+                            Sinopse: <?= $filme->sinopse ?><br>
+                            Data de estreia: <?= $filme->ano ?><br>
+                            Gênero: <?= $filme->genero ?><br>
+                            Elenco: <?= $filme->elenco ?><br>
                         </div>
                     </div>
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $filme->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Avaliação: <br>
+                            Título: <?= $filme->titulo ?><br>
+                            Sinopse: <?= $filme->sinopse ?><br>
+                            Data de estreia: <?= $filme->ano ?><br>
+                            Gênero: <?= $filme->genero ?><br>
+                            Elenco: <?= $filme->elenco ?><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="quadro">
+                        <div class="imagem"><?= $filme->caminhoimg ?></div>
+                        <div class="info">
+                            Título: <?= $filme->titulo ?><br>
+                            Sinopse: <?= $filme->sinopse ?><br>
+                            Data de estreia: <?= $filme->ano ?><br>
+                            Gênero: <?= $filme->genero ?><br>
+                            Elenco: <?= $filme->elenco ?><br>
+                        </div>
+                    </div>
+                    <div class="quadro">
+                        <div class="imagem"><?= $filme->caminhoimg ?></div>
+                        <div class="info">
+                            Título: <?= $filme->titulo ?><br>
+                            Sinopse: <?= $filme->sinopse ?><br>
+                            Data de estreia: <?= $filme->ano ?><br>
+                            Gênero: <?= $filme->genero ?><br>
+                            Elenco: <?= $filme->elenco ?><br>
                         </div>
                     </div>
                 </div>
@@ -124,7 +129,7 @@
                 FILME SELECIONADO
             </div>
             <div class="info-selecao">
-                <div class="imagem">img</div>
+                <div class="imagem"><?= $filme->caminhoimg ?></div>
                 <div class="dados"></div>
                 <div class="add-critica">
                     <div class="add centralizar">

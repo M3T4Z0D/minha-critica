@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="../public/css/navbar.css">
     <link href="../public/css/movie_search_page.css" rel="stylesheet">
 </head>
+
 <body>
     <nav>
-        <object width="100%"  height="100%" data="../../nav__menu.php"></object>
+        <object width="100%" height="100%" data="../../nav__menu.php"></object>
     </nav>
     <div class="corpo">
         <div class="ordem_filtro">
@@ -18,11 +20,10 @@
                 <div class="ordem">
                     <label for="ordenar">Ordenar por:</label>
                     <select id="ordem" name="ordem"><br>
-                        <option value= "genero">Gênero</option>
-                        <option value= "nota_maior">Maiores notas</option>
-                        <option value= "mais_recentes">Mais recentes</option>
-                        <option value= "mais_visualizacoes">Mais visualizações</option>
-                        <option value= "mais_comentados">Mais comentados</option>
+                        <option value="genero">Gênero</option>
+                        <option value="mais_recentes">Mais recentes</option>
+                        <option value="mais_visualizacoes">Mais visualizações</option>
+                        <option value="mais_comentados">Mais comentados</option>
                     </select><br><br>
                 </div>
                 <p>Filtrar por:</p>
@@ -31,20 +32,22 @@
                     <input type="number" id="idade" name="idade" value="Idade"><br><br>
                     <label for="genero">Gênero</label>
                     <select id="genero" name="genero"><br>
-                        <option value= "terror">Terror</option>
-                        <option value= "ficcao_cientifica">Ficção científica</option>
-                        <option value= "aventura">Aventura</option>
-                        <option value= "romance">Romance</option>
+                        <option value="terror">Terror</option>
+                        <option value="ficcao_cientifica">Ficção científica</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="romance">Romance</option>
                     </select><br><br>
                     <label for="data_lancamento">Data de lançamento</label>
                     <input type="date" id="data_lancamento" name="data_lancamento" value="Data"><br><br>
                 </div>
-            </form>            
+            </form>
         </div>
         <div class="centro">
             <div class="barra-superior">
                 <div class="barra-pesquisa">
-                    <div class="icone-pesquisa centralizar"><ion-icon name="search"></ion-icon></div>
+                    <div class="icone-pesquisa centralizar">
+                        <ion-icon name="search"></ion-icon>
+                    </div>
                     <div class="input-pesquisa centralizar"><input type="text" id="pesquisa_filme" name="pesquisa_filme" placeholder="Pesquisar série"></div>
                 </div>
                 <div class="add-filme centralizar">
@@ -54,73 +57,67 @@
             <div class="filmes">
                 <div class="linha">
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $serie->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Temporadas: <br>
-                            Episódios: <br>
-                            Avaliação: <br>
+                            Título: <?= $serie->titulo ?><br>
+                            Sinopse: <?= $serie->sinopse ?><br>
+                            Data de estreia: <?= $serie->ano ?><br>
+                            Gênero: <?= $serie->genero ?><br>
+                            Elenco: <?= $serie->elenco ?><br>
                         </div>
                     </div>
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $serie->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Temporadas: <br>
-                            Episódios: <br>
-                            Avaliação: <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="linha">
-                    <div class="quadro">
-                        <div class="imagem">img</div>
-                        <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Temporadas: <br>
-                            Episódios: <br>
-                            Avaliação: <br>
-                        </div>
-                    </div>
-                    <div class="quadro">
-                        <div class="imagem">img</div>
-                        <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Temporadas: <br>
-                            Episódios: <br>
-                            Avaliação: <br>
+                            Título: <?= $serie->titulo ?><br>
+                            Sinopse: <?= $serie->sinopse ?><br>
+                            Data de estreia: <?= $serie->ano ?><br>
+                            Gênero: <?= $serie->genero ?><br>
+                            Elenco: <?= $serie->elenco ?><br>
                         </div>
                     </div>
                 </div>
                 <div class="linha">
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $serie->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Temporadas: <br>
-                            Episódios: <br>
-                            Avaliação: <br>
+                            Título: <?= $serie->titulo ?><br>
+                            Sinopse: <?= $serie->sinopse ?><br>
+                            Data de estreia: <?= $serie->ano ?><br>
+                            Gênero: <?= $serie->genero ?><br>
+                            Elenco: <?= $serie->elenco ?><br>
                         </div>
                     </div>
                     <div class="quadro">
-                        <div class="imagem">img</div>
+                        <div class="imagem"><?= $serie->caminhoimg ?></div>
                         <div class="info">
-                            Título: <br>
-                            Sinopse: <br>
-                            Data de estreia: <br>
-                            Temporadas: <br>
-                            Episódios: <br>
-                            Avaliação: <br>
+                            Título: <?= $serie->titulo ?><br>
+                            Sinopse: <?= $serie->sinopse ?><br>
+                            Data de estreia: <?= $serie->ano ?><br>
+                            Gênero: <?= $serie->genero ?><br>
+                            Elenco: <?= $serie->elenco ?><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="quadro">
+                        <div class="imagem"><?= $serie->caminhoimg ?></div>
+                        <div class="info">
+                            Título: <?= $serie->titulo ?><br>
+                            Sinopse: <?= $serie->sinopse ?><br>
+                            Data de estreia: <?= $serie->ano ?><br>
+                            Gênero: <?= $serie->genero ?><br>
+                            Elenco: <?= $serie->elenco ?><br>
+                        </div>
+                    </div>
+                    <div class="quadro">
+                        <div class="imagem"><?= $serie->caminhoimg ?></div>
+                        <div class="info">
+                            Título: <?= $serie->titulo ?><br>
+                            Sinopse: <?= $serie->sinopse ?><br>
+                            Data de estreia: <?= $serie->ano ?><br>
+                            ELenco: <?= $serie->elenco ?><br>
+                            Gênero: <?= $serie->genero ?><br>
                         </div>
                     </div>
                 </div>
@@ -132,7 +129,7 @@
                 SERIE SELECIONADA
             </div>
             <div class="info-selecao">
-                <div class="imagem">img</div>
+                <div class="imagem"><?= $serie->caminhoimg ?></div>
                 <div class="dados"></div>
                 <div class="add-critica">
                     <div class="add centralizar">
@@ -149,6 +146,7 @@
         </div>
     </div>
 </body>
-<script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
-<script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" > </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+<script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+
 </html>
