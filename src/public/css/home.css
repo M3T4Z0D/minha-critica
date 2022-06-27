@@ -60,3 +60,21 @@ body {
     font-size: 12px;
     color: #f7e159;
 }
+
+div.empty{
+    border: 1px solid whitesmoke;
+    margin: auto;
+    margin-top: 10%;
+    padding: 2rem;
+}
+
+.empty a{
+    color: #f7e159;
+    transition: ease 0.5s;
+}
+
+.empty a:hover{
+    width: 1.5rem;
+}
+
+

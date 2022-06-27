@@ -1,5 +1,24 @@
 <!-- Em desenvolvimento por Lucas Cabral -->
 
+<?php
+    use src\models\Usuario;
+    use database\Database;
+    
+    if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['name'])){
+
+        try {
+            Database::createSchema();
+            $user = new Usuario($_POST['email'], $_POST['senha'], $_POST['nome']);
+            $user->salvar();
+            header('Location: ../../index.php');
+        } catch (\Throwable $th) {
+            header('Location: ./register_page.php');
+            echo "<script>alert('E-mail já cadastrado.')</script>";
+        }
+    }
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +42,7 @@
         
         <hr>
 
-        <form  action="#" class="login__form" method="POST">
+        <form class="login__form" action="./register_page.php" method="POST">
             
             <div class="form__field">
                 <label for="name">Nome completo</label>
@@ -40,7 +59,7 @@
                 <input type="password" name="password" id="password">
             </div>
 
-            <button class="btn" type="submit">Cadastrar</button>
+            <input class="btn" type="submit" value="Casdastrar"/>
         </form>
     </section>
 </body>

@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../public/css/reset.css">
     <link rel="stylesheet" href="../public/css/navbar.css">
     <link rel="stylesheet" href="../public/css/login.css">
-
-    <script src="../public/js/login.js" defer></script>
 </head>
 
 <body>
