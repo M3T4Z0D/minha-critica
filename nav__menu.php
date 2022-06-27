@@ -19,8 +19,8 @@
         <div class="nav__menu">
             <a href="index.php" target="_parent" class="menu__item">Home</a>
             <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">Filmes</a>
-            <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">Séries</a>
-            <a href="src\views\movie_search_page.php" target="_parent" class="menu__item">Livros</a>
+            <a href="src\views\series_search_page.php" target="_parent" class="menu__item">Séries</a>
+            <a href="src\views\books_search_page.php" target="_parent" class="menu__item">Livros</a>
             <a href="src\views\movie_review_filter.php" target="_parent" class="menu__item">Busca Avançada</a>
         </div>
 
