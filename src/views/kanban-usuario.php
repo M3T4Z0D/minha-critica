@@ -1,3 +1,7 @@
+<?php
+  use src\database;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,49 +27,52 @@
             <strong>Descrição:</strong> Este é um teste de descrição que o usuario podera
             fazer acerca do filme escolhido.</div>
             </li>
-      <li class="table-critica-destaque">
-        <img class="img" src="../public/img/interstellar.png">
-        <div class="titulo-critica-destaque">Interestelar</div>
-        <div class="texto-descritivo">Data da publicação: dd/mm/aaaa <br>
-          <strong>Descrição:</strong> Este é um teste de descrição que o usuario podera
-          fazer acerca do filme escolhido.</div>
-        </li>
-    <li class="table-critica-destaque">
-        <img class="img" src="../public/img/interstellar.png">
-        <div class="titulo-critica-destaque">Interestelar</div>
-        <div class="texto-descritivo">Data da publicação: dd/mm/aaaa <br>
-          <strong>Descrição:</strong> Este é um teste de descrição que o usuario podera
-          fazer acerca do filme escolhido.</div>
-    </li>
-    <li class="table-critica-destaque">
-        <img class="img" src="../public/img/interstellar.png">
-        <div class="titulo-critica-destaque">Interestelar</div>
-        <div class="texto-descritivo">Data da publicação: dd/mm/aaaa <br>
-          <strong>Descrição:</strong> Este é um teste de descrição que o usuario podera
-          fazer acerca do filme escolhido.</div>
-    </li>
+       <?php
+       $con = Database::getConnection();
+       $stm = $con->prepare('SELECT caminhoimg, titulo, ano, sinopse FROM Filmes');
+       $stm->execute();
+
+       while ($resultado = $stm->fetch()) { ?>
+       <li class="table-critica-destaque">
+         <img class="img" src="<?=$resultado['caminhoimg'];?>">
+         <div class="titulo-critica-destaque"><?=$resultado['titulo'];?></div>
+         <div class="texto-descritivo">Ano: <?=$resultado['ano'];?><br>
+         <strong>Descrição: </strong><?=$resultado['sinopse'];?></div>
+       </li>
+    <?php } ?>
     </ul>
     </div>
     <div class="table-kanban-series">
         <ul style="list-style: none;">
-        <li class="table-critica-destaque">
-            <img class="img" src="../public/img/got.png">
-            <div class="titulo-critica-destaque">Game Of Thrones</div>
-            <div class="texto-descritivo">Data da publicação: dd/mm/aaaa <br>
-              <strong>Descrição:</strong> Este é um teste de descrição que o usuario podera
-              fazer acerca da serie escolhida.</div>
-        </div>
-    </li>
+        <?php
+       $con = Database::getConnection();
+       $stm = $con->prepare('SELECT caminhoimg, titulo, ano, sinopse FROM Series');
+       $stm->execute();
+
+       while ($resultado = $stm->fetch()) { ?>
+       <li class="table-critica-destaque">
+         <img class="img" src="<?=$resultado['caminhoimg'];?>">
+         <div class="titulo-critica-destaque"><?=$resultado['titulo'];?></div>
+         <div class="texto-descritivo">Ano: <?=$resultado['ano'];?><br>
+         <strong>Descrição: </strong><?=$resultado['sinopse'];?></div>
+       </li>
+    <?php } ?>
     </ul>
   <div class="table-kanban-livros">
     <ul style="list-style: none;">
-    <li class="table-critica-destaque">
-        <img class="img" src="../public/img/1984.png">
-        <div class="titulo-critica-destaque">1984</div>
-        <div class="texto-descritivo">Data da publicação: dd/mm/aaaa <br>
-          <strong>Descrição:</strong> Este é um teste de descrição que o usuario podera
-          fazer acerca de um livro escolhido.</div>
-    </li>
+    <?php
+       $con = Database::getConnection();
+       $stm = $con->prepare('SELECT caminhoimg, titulo, ano, sinopse FROM Livros');
+       $stm->execute();
+
+       while ($resultado = $stm->fetch()) { ?>
+       <li class="table-critica-destaque">
+         <img class="img" src="<?=$resultado['caminhoimg'];?>">
+         <div class="titulo-critica-destaque"><?=$resultado['titulo'];?></div>
+         <div class="texto-descritivo">Ano: <?=$resultado['ano'];?><br>
+         <strong>Descrição: </strong><?=$resultado['sinopse'];?></div>
+       </li>
+    <?php } ?>
     </ul>
   </div>
 </body>
