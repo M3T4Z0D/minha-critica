@@ -2,7 +2,7 @@
 
 namespace src\models;
 
-use src\database;
+use database\Database;
 
 class Serie
 {
@@ -14,7 +14,7 @@ class Serie
     private $sinopse;   //sinopse
     private $caminhoimg; //imagem
 
-    function __construct(string $caminmhoimg, string $titulo, string $genero, string $ano, string $sinopse, string $elenco)
+    function __construct(string $caminhoimg, string $titulo, string $genero, string $ano, string $sinopse, string $elenco)
     {
         $this->titulo = $titulo;
         $this->genero = $genero;

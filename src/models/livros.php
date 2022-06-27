@@ -2,7 +2,7 @@
 
 namespace src\models;
 
-use src\database;
+use database\Database;
 
 class Livro
 {

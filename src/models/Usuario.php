@@ -2,7 +2,7 @@
 
 namespace src\models;
 
-use src\Database;
+use database\Database;
 
 class Usuario
 {
